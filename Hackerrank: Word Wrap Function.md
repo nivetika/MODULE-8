@@ -26,9 +26,23 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+```
+import textwrap
+def wrap_string(long_string, width):
+    wrapped_text = textwrap.fill(long_string, width)
+    return wrapped_text
+long_string = input("Enter a long string: ")
+width = int(input("Enter the desired width for wrapping: "))
+
+wrapped_string = wrap_string(long_string, width)
+
+print("\nWrapped String:")
+print(wrapped_string)
+```
+
 
 ## Sample Output
+<img width="795" height="303" alt="image" src="https://github.com/user-attachments/assets/4b6dfd79-aa89-4e13-9abf-98e97116722a" />
 
 ## Result
-
+Thus to write a Python function that takes a long string and a specified width, and returns the string formatted with line breaks such that each line has **at most the given width** is created and executed successfully.
